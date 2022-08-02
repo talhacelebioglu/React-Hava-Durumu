@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #203a43;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+.weather-app {
+  background: url("./assets/weather-clouds.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.search {
+  text-align: center;
+}
+
+.weather-app input,
+.weather-app button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-top: 50px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.weather-app input {
+  background-color: #fafafa;
+  color: #203a43;
+}
+
+.weather-app input:focus {
+  outline: none;
+}
+
+.weather-app button {
+  cursor: pointer;
+  background-color: #8e9eab;
+  color: #fafafa;
+  margin-left: 5px;
+}
+
+.weather-app button:hover {
+  background-color: #fafafa;
+  color: #8e9eab;
+}
+
+.info-weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(242, 242, 242, 0.3);
+  border-radius: 20px;
+  width: 500px;
+  height: 400px;
+  margin: 50px auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.info-weather img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(85%, -45%);
+}
+
+.info-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: end;
+}
+
+.info-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* media */
+@media (max-width: 500px) {
+  h2 {
+    font-size: 30px;
+  }
+  .info-top {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  .info-footer {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .info-weather {
+    width: 100%;
+  }
+}
