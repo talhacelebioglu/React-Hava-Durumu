@@ -9,10 +9,10 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const key = process.env.REACT_APP_API_KEY;
+    // const key = process.env.REACT_APP_API_KEY;
     try {
       const response = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${search}&lang=tr&appid=${key}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${search}&lang=tr&appid=${process.env.REACT_APP_API_KEY}&units=metric`
       );
       console.log(response);
       setCity(response.data);
