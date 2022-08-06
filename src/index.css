@@ -41,6 +41,7 @@ h4 {
   background: url("./assets/weather-clouds.jpg") no-repeat center center/cover;
   width: 100%;
   height: 100vh;
+  padding: 10px;
 }
 
 .search {
@@ -131,5 +132,6 @@ h4 {
   }
   .info-weather {
     width: 100%;
+    height: 320px;
   }
 }
